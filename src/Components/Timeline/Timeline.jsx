@@ -15,6 +15,8 @@ const Timeline = () => {
                 width:
                   window.innerWidth <= 320
                     ? "230px" // Extra-small screens (very small mobile)
+                    : window.innerWidth <= 360
+                    ? "260px" // Extra-small screens (very small mobile)
                     : window.innerWidth < 390
                     ? "300px" // Small screens (slightly larger mobile)
                     : window.innerWidth < 440
@@ -31,7 +33,61 @@ const Timeline = () => {
                     ? "530px" // Mid-size mobile screens
                     : window.innerWidth < 640
                     ? "550px" // Mid-size mobile screens
-                    : "370px", // Extra-large screens
+                    : window.innerWidth < 690
+                    ? "300px" // Mid-size mobile screens
+                    : window.innerWidth < 730
+                    ? "320px" // Mid-size mobile screens
+                    : window.innerWidth < 830
+                    ? "350px" // Mid-size mobile screens
+                    : window.innerWidth < 900
+                    ? "380px" // Mid-size mobile screens
+                    : window.innerWidth < 950
+                    ? "410px" // Mid-size mobile screens
+                    : window.innerWidth < 1000
+                    ? "440px" // Mid-size mobile screens
+                    : window.innerWidth < 1024
+                    ? "470px" // Mid-size mobile screens
+                    : window.innerWidth < 1080
+                    ? "200px" // Mid-size mobile screens
+                    : window.innerWidth < 1230
+                    ? "250px" // Mid-size mobile screens
+                    : window.innerWidth < 1315
+                    ? "280px" // Mid-size mobile screens
+                    : window.innerWidth < 1400
+                    ? "310px" // Mid-size mobile screens
+                    : window.innerWidth < 1490
+                    ? "340px" // Mid-size mobile screens
+                    : window.innerWidth < 1580
+                    ? "370px" // Mid-size mobile screens
+                    : window.innerWidth < 1670
+                    ? "400px" // Mid-size mobile screens
+                    : window.innerWidth < 1760
+                    ? "430px" // Mid-size mobile screens
+                    : window.innerWidth < 1850
+                    ? "460px" // Mid-size mobile screens
+                    : window.innerWidth < 1940
+                    ? "490px" // Mid-size mobile screens
+                    : window.innerWidth < 2030
+                    ? "520px" // Mid-size mobile screens
+                    : window.innerWidth < 2120
+                    ? "550px" // Mid-size mobile screens
+                    : window.innerWidth < 2210
+                    ? "580px" // Mid-size mobile screens
+                    : window.innerWidth < 2300
+                    ? "610px" // Mid-size mobile screens
+                    : window.innerWidth < 2390
+                    ? "640px" // Mid-size mobile screens
+                    : window.innerWidth < 2480
+                    ? "670px" // Mid-size mobile screens
+                    : window.innerWidth < 2570
+                    ? "700px" // Mid-size mobile screens
+                    : window.innerWidth < 2660
+                    ? "730px" // Mid-size mobile screens
+                    : window.innerWidth < 2750
+                    ? "760px" // Mid-size mobile screens
+                    : window.innerWidth < 2840
+                    ? "790px" // Mid-size mobile screens
+                    : "320px", // Extra-large screens
               }}
             ></div>
           </div>
