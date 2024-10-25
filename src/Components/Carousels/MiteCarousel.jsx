@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa6";
 import shieldImg from "../../assets/shield-icon.png";
 import Timeline from "../Timeline/Timeline";
 
-const ImageCarousel = ({ images }) => {
+const ImageCarousel = ({ images, toggleModal }) => {
   return (
     <div>
       <Carousel
@@ -41,8 +41,11 @@ const ImageCarousel = ({ images }) => {
           save 42.00%
         </span>
       </h1>
-      <div className="w-full px-5">
-        <button className="mt-10 px-5 md:px-0 w-full text-center py-2.5 text-white font-bold md:text-lg rounded-full bg-[#198754] animate-shakeThreeTimes">
+      <div className="w-full px-2">
+        <button
+          onClick={toggleModal}
+          className="mt-10 px-5 md:px-0 w-full text-center py-2.5 text-white font-bold md:text-lg rounded-full bg-[#198754] animate-shakeThreeTimes"
+        >
           Order Now - Cash On Delivery - 499.00
         </button>
       </div>

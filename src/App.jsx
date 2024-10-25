@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import Navbar from "./Components/Header/Navbar";
 import Headline from "./Components/Header/Headline";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Headline />
         <Navbar />
         <Home />
+        <Footer />
       </div>
     </div>
   );

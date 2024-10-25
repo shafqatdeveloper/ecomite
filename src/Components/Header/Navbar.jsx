@@ -27,7 +27,7 @@ const Navbar = () => {
       <button onClick={toggleMenu}>
         <FiMenu size={29} className="text-gray-500" />
       </button>
-      <img src={logoImg} alt="LOGO" className="w-28 h-auto" />
+      <img src={logoImg} alt="LOGO" className="w-24 h-auto" />
       <button>
         <RiShoppingBag4Line size={29} className="text-gray-500" />
       </button>
