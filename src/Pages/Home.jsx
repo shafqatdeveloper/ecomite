@@ -45,9 +45,9 @@ const Home = () => {
     fetchStates();
   }, []);
 
-  const handleStateChange = (selectedOption) => {
+  const handleStateChange = (event) => {
+    const selectedOption = event.target.value;
     setSelectedState(selectedOption);
-    console.log("Selected state:", selectedOption);
   };
 
   return (
@@ -80,7 +80,7 @@ const Home = () => {
         }
       >
         <div className="bg-[#198754] w-full py-4">
-          <h1 className="pl-5 text-white">
+          <h1 className="px-5 text-white">
             🛍️LIMITED TIME OFFER VALID FOR TODAY ONLY 😯⬇️
           </h1>
           <button
@@ -178,7 +178,7 @@ const Home = () => {
               <label className="flex items-center border border-gray-300 rounded-lg p-2">
                 <select
                   className="w-full outline-none"
-                  value={selectedState}
+                  value={selectedState || ""}
                   required
                   onChange={handleStateChange}
                 >
@@ -186,7 +186,7 @@ const Home = () => {
                     Select State
                   </option>
                   {states.map((state, index) => (
-                    <option key={index} value={state}>
+                    <option key={index} value={state.value}>
                       {state.label}
                     </option>
                   ))}
