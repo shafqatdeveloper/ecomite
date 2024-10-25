@@ -1,0 +1,29 @@
+@keyframes unfoldBanner {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes foldBanner {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+.unfold-menu {
+    transform-origin: top;
+    animation: unfoldBanner 0.5s ease forwards;
+}
+
+.fold-menu {
+    transform-origin: top;
+    animation: foldBanner 0.5s ease forwards;
+}
